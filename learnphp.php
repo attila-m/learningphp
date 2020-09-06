@@ -25,6 +25,33 @@
     echo $streetAddress . "</br>";
     echo $cityAddress . "</br>";
 
+    $str = <<<EOD
+    The customers name is
+    $usersName and they
+    live at $streetAddress
+    in $cityAddress</br>
+    EOD;
+
+    echo $str;
+
+    define('PI', 3.1415926);
+
+    echo "the value of PI is " . PI;
+
+    echo "<br>";
+    echo "<br>";
+
+    $customers = array(array('Attila', 28, 'm'),
+                        array('Peter', 33, 'm'),
+                        array('Gabor', 24, 'm'));
+
+    for($row = 0; $row < 3; $row++) {
+        for($col = 0; $col < 3; $col++) {
+            echo $customers[$row][$col] . " ";
+        }
+        echo "<br>";
+    }
+
     ?>
 </body>
 
