@@ -52,6 +52,12 @@
         echo "<br>";
     }
 
+    function addNumbers($num1, $num2) {
+        return $num1 + $num2;
+    }
+
+    echo "add numbers: 2 + 3 = " .  addNumbers(2, 3);
+
     ?>
 </body>
 
